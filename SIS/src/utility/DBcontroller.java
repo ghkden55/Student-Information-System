@@ -6,11 +6,24 @@ import java.sql.SQLException;
 
 public class DBcontroller {
 
-    private String url = "jdbc:mysql://127.0.0.1:3306/SIS";
-    private String user = "root";
-    private String password = "1234";
+    static DBcontroller instance = new DBcontroller();
 
-    private Connection conn = null;
+    String url = "jdbc:mysql://127.0.0.1:3306/SIS";
+    String user = "root";
+    String password = "1234";
+
+    Connection conn = null;
+
+
+    public static DBcontroller getInstance() {
+
+        if (instance == null) {
+            instance = new DBcontroller();
+        }
+
+        return instance;
+    }
+
 
     public Connection getConn() {
 

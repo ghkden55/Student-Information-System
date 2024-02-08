@@ -1,12 +1,15 @@
-import utility.DBcontroller;
+import controller.SISController;
+import error.OutOfIndexException;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
+
+//        SISController.getInstance().startSIS();
+
+
+        OutOfIndexException exception = new OutOfIndexException();
 
 
 
