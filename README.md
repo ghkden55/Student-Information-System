@@ -1,1 +1,4 @@
-# Student-Information-System
+# 학생 정보 시스템
+
+
+JDBC를 사용한 학생 정보 시스템 프로그램
